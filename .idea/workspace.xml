@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b3dc3c-a7c1-4f95-9cef-015649b74eaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/loockeeer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/doctor_moderation_v.2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/ban.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/kick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/ping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/commandblocked.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/custom-ban.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/custom-kick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/guildBanAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/guildMemberAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/guildMemberRemove.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/ready.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/argumentErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/graphQLClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/graphQLConnect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/infoEmbed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/updateGuild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +24,7 @@
   <component name="ProjectId" id="1ShJujzOO0VzqzxEsgLuau7T0QX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.7.0" />
     <property name="js.last.introduce.type" value="CONST" />
@@ -104,8 +80,16 @@
       <workItem from="1572198803305" duration="10649000" />
       <workItem from="1572277226908" duration="2806000" />
       <workItem from="1572357561341" duration="12494000" />
-      <workItem from="1572445751793" duration="8353000" />
+      <workItem from="1572445751793" duration="11252000" />
     </task>
+    <task id="LOCAL-00001" summary="Add README.md with some cool text">
+      <created>1572647154642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572647154642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +105,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add README.md with some cool text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md with some cool text" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
