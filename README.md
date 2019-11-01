@@ -4,50 +4,50 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
 
 # Features
 
-- [checkbox:checked] Ban command
-- [checkbox:checked] Kick command
-- [checkbox:checked] Ping command
-- [checkbox:checked] Help command
-- [checkbox:unchecked] Clear command
-    - [checkbox:unchecked] Specific user
-    - [checkbox:unchecked] From users
-    - [checkbox:unchecked] Froms bots
-    - [checkbox:unchecked] Before / after
-    - [checkbox:unchecked] Regex
-    - [checkbox:unchecked] Include
-    - [checkbox:unchecked] Image
-    - [checkbox:unchecked] Embed
+- [x] Ban command
+- [x] Kick command
+- [x] Ping command
+- [x] Help command
+- [ ] Clear command
+    - [ ] Specific user
+    - [ ] From users
+    - [ ] Froms bots
+    - [ ] Before / after
+    - [ ] Regex
+    - [ ] Include
+    - [ ] Image
+    - [ ] Embed
     
-- [checkbox:unchecked] Warn command
-- [checkbox:unchecked] Delwarn command
-- [checkbox:unchecked] Unban command
-- [checkbox:unchecked] Mute command
-- [checkbox:unchecked] Unmute command
-- [checkbox:unchecked] Mod_see command
+- [ ] Warn command
+- [ ] Delwarn command
+- [ ] Unban command
+- [ ] Mute command
+- [ ] Unmute command
+- [ ] Mod_see command
 
-- [checkbox:unchecked] Anti Spam/Flood
-- [checkbox:unchecked] Anti SelfBot
+- [ ] Anti Spam/Flood
+- [ ] Anti SelfBot
 
-- [checkbox:unchecked] Server Logs
-    - [checkbox:unchecked] Message delete
-    - [checkbox:unchecked] Message update
-    - [checkbox:unchecked] Role create
-    - [checkbox:unchecked] Role update
-    - [checkbox:unchecked] Role delete
-    - [checkbox:unchecked] Channel create
-    - [checkbox:unchecked] Channel update
-    - [checkbox:unchecked] Channel delete
-    - [checkbox:unchecked] Invite create
+- [ ] Server Logs
+    - [ ] Message delete
+    - [ ] Message update
+    - [ ] Role create
+    - [ ] Role update
+    - [ ] Role delete
+    - [ ] Channel create
+    - [ ] Channel update
+    - [ ] Channel delete
+    - [ ] Invite create
 
-- [checkbox:unchecked] Mod logs
-    - [checkbox:unchecked] Warn add
-    - [checkbox:unchecked] Warn remove
-    - [checkbox:checked] Ban
-    - [checkbox:unchecked] Unban
-    - [checkbox:checked] Kick
-    - [checkbox:unchecked] Mute
-    - [checkbox:unchecked] Unmute
-    - [checkbox:unchecked] Mod_see
+- [ ] Mod logs
+    - [ ] Warn add
+    - [ ] Warn remove
+    - [x] Ban
+    - [ ] Unban
+    - [x] Kick
+    - [ ] Mute
+    - [ ] Unmute
+    - [ ] Mod_see
     
 # How to install
 
