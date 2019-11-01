@@ -11,7 +11,7 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
 - [ ] Clear command
     - [ ] Specific user
     - [ ] From users
-    - [ ] Froms bots
+    - [ ] From bots
     - [ ] Before / after
     - [ ] Regex
     - [ ] Include
@@ -54,6 +54,7 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
 Installing DoctorModeration is very easy !
 
 First, `git clone https://github.com/loockeeer/doctor_moderation`
-Then, create a file in `src` called `token.json` with your token in a string inside (`"TOKEN"`)
 
-TODO : Pgsql config
+Then, create a file in `src` called `token.json` with your token in a string (`"TOKEN"`)
+
+TODO : PGSQL config
