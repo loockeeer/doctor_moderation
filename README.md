@@ -58,12 +58,9 @@ Installing DoctorModeration is very easy !
 
 First, `git clone https://github.com/loockeeer/doctor_moderation`
 
-<<<<<<< HEAD
+
 Then, create a file in `src` called `token.json` with your token in a string (`"TOKEN"`)
 
-TODO : PGSQL config
-=======
 You'll need to install PostgreSQL and then to pipe `database.sql` into it.
 
 TODO : DataBase API (other repository)
->>>>>>> bf0c9c30ee707b8c3eb5cf473deb4aca8ab373fe
