@@ -26,9 +26,9 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
 
 - [ ] Anti Spam/Flood
 - [ ] Anti SelfBot
-- [ ] Server Stats
-    - [ ] Member Count
-    - [ ] Bot Count
+- [x] Server Stats
+    - [x] Member Count
+    - [x] Bot Count
 
 - [ ] Server Logs
     - [ ] Message delete
