@@ -10,7 +10,15 @@ class GraphClient {
             }).then(rs=>{
                 const result = Object.entries(rs.data.data)
                 resolve(result)
-            }).catch(reject)
+            }).catch(err=> {
+                if(err.response.status === 400) {
+                    reject(err.response.data.errors);
+
+                } else {
+                    console.log('=> Cannot connect to database API.');
+                    process.exit()
+                }
+            })
         })
     }
 }
