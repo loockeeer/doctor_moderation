@@ -6,6 +6,10 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
 
 - [x] Ban command
 - [x] Kick command
+- [x] Warn command
+- [ ] Delmod commmand
+- [ ] Mute command
+- [x] Mod_see command
 - [x] Ping command
 - [x] Help command
 - [ ] Clear command
@@ -18,12 +22,7 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
     - [ ] Image
     - [ ] Embed
     
-- [ ] Warn command
-- [ ] Delwarn command
-- [ ] Unban command
-- [ ] Mute command
-- [ ] Unmute command
-- [ ] Mod_see command
+
 
 - [ ] Anti Spam/Flood
 - [ ] Anti SelfBot
@@ -43,7 +42,7 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
     - [ ] Invite create
 
 - [ ] Mod logs
-    - [ ] Warn add
+    - [x] Warn add
     - [ ] Warn remove
     - [x] Ban
     - [ ] Unban
