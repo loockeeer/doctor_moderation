@@ -2,6 +2,8 @@
   "dependencies": {
     "axios": "^0.19.0",
     "discord-akairo": "*",
+    "discord-eval.js": "^1.0.2",
+    "discord-pagination.js": "^1.0.2",
     "discord.js": "*"
   }
 }
