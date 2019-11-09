@@ -9,8 +9,7 @@ class GuildBanAddListener extends Listener {
     }
 
     async exec(guild, user) {
-        await this.client.updateGuild(true)
-        console.log(`=> ${user.tag} left the server. (BAN)`);
+        console.log(`=> ${user.tag} left the server. (Banned)`);
     }
 }
 

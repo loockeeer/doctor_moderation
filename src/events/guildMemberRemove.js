@@ -1,5 +1,5 @@
 const { Listener } = require('discord-akairo');
-
+const update = require('../utils/updateStats.js');
 class GuildMemberRemovedListener extends Listener {
     constructor() {
         super('guildMemberRemove', {
@@ -9,8 +9,8 @@ class GuildMemberRemovedListener extends Listener {
     }
 
     async exec(member) {
-        await this.client.updateGuild(true)
         console.log(`=> ${member.user.tag} left the server.`);
+        update(this.client);
     }
 }
 

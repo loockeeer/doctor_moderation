@@ -11,7 +11,7 @@ class CommandBlockedListener extends Listener {
     exec(message, command, reason) {
         switch(reason) {
             case "userPermissions":
-                return message.channel.send(infoEmbed(message.author, `Il vous manque la permission **${command.clientPermissions}**.`,this.client.config.colors.RED))
+                return message.channel.send(infoEmbed(message.author, `Il vous manque la permission **${command.userPermissions[0]}**.`,this.client.config.colors.RED))
         }
     }
 }

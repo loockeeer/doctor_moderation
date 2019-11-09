@@ -8,7 +8,7 @@ class MessageListener extends Listener {
         });
     }
 
-    async exec() {
+    async exec(message) {
         // Add some code here if needed.
     }
 }

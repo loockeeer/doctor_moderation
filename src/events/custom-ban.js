@@ -30,7 +30,6 @@ class CustomBanListener extends Listener {
                     break
             }
         }
-        console.log(time)
         const embed = new RichEmbed()
             .setAuthor('Ban', mod.user.displayAvatarURL)
             .setThumbnail(target.user.displayAvatarURL)
@@ -39,7 +38,7 @@ class CustomBanListener extends Listener {
             .addField('Raison', reason ? reason : 'Aucune', true)
             .addField('Durée', time ? humanTime[0].replace('d', ' jour(s)').replace('w', ' semaine(s)').replace('m', 'mois') : "Infinie", true)
             .setTimestamp()
-            .setColor(this.client.config.colors.RED)
+            .setColor(this.client.config.colors.RED);
         const logEmbed = new RichEmbed()
             .setAuthor(target.user.tag, target.user.displayAvatarURL)
             .addField('Action', 'Ban', true)
@@ -47,27 +46,25 @@ class CustomBanListener extends Listener {
             .addField('Raison', reason ? reason : 'Aucune', true)
             .addField('Durée', time ? humanTime[0].replace('d', ' jour(s)').replace('w', ' semaine(s)').replace('m', 'mois') : "Infinie", true)
             .setTimestamp()
-            .setColor(this.client.config.colors.RED)
+            .setColor(this.client.config.colors.RED);
         if(mod.user.id !== this.client.user.id) {
             message.channel.send(embed);
-            console.log('LOG')
         }
         target.createDM().then(channel=>{
             channel.send(embed).then(()=>{
                 return target.ban({reason: reason})
             }).catch(()=>target.ban({reason: reason}))
-        }).catch(()=>target.ban({reason: reason}))
-        this.client.channels.get(this.client.config.channels.MOD_LOG).send(logEmbed)
+        }).catch(()=>target.ban({reason: reason}));
+        this.client.channels.get(this.client.config.channels.MOD_LOG).send(logEmbed);
 
         conn.query(`
 mutation {
-  createBan(input: {ban: {targetId: "${target.user.id}" ${time ? 'time:"'+time+'", ' : ','} ${reason ? reason+"," : 'Aucune'} moderatorId: "${mod.user.id}"}}) {
+  createBan(input: {ban: {createdAt: "${Date.now()}", targetId: "${target.user.id}" ${time ? 'time:"'+time+'", ' : ','} ${reason ? reason+"," : 'Aucune'} moderatorId: "${mod.user.id}"}}) {
     ban {
-      createdat
+      createdAt
     }
   }
-}
-        `);
+}`).catch(console.error).then(console.log);
     }
 }
 

@@ -2,6 +2,8 @@ const { Listener } = require('discord-akairo');
 
 const { RichEmbed } = require('discord.js');
 
+const db = require('../utils/graphQLConnect.js');
+
 class CustomKickListener extends Listener {
     constructor() {
         super('custom-kick', {
@@ -35,6 +37,15 @@ class CustomKickListener extends Listener {
         if(mod.user.id !== this.client.user.id) {
             message.channel.send(embed)
         }
+        // Query to API
+        if(target.user.bot) return;
+        db.query(`
+mutation {
+  createKick(input: {kick: {createdAt: "${Date.now()}", targetId: "${target.user.id}", moderatorId: "${mod.user.id}", reason: "${reason || ''}"}}) {
+    clientMutationId
+  }
+}
+        `)
     }
 }
 

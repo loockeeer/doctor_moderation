@@ -1,4 +1,5 @@
 const { Listener } = require('discord-akairo');
+const update = require('../utils/updateStats.js');
 
 class ReadyListener extends Listener {
     constructor() {
@@ -10,7 +11,11 @@ class ReadyListener extends Listener {
 
     async exec() {
         console.log('=> Ready');
-        await this.client.updateGuild();
+        console.log('=> Logged in as '+this.client.id);
+        console.log('=> A pretty cool bot, made by Loockeeer.');
+        await require('../utils/updateGuild.js')(this.client);
+        setInterval(this.client.refreshModeration, 2000);
+        update(this.client);
     }
 }
 
