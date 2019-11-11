@@ -45,10 +45,10 @@ Doctor Modération is a French bot to moderate the server [Les Laboratoires JS](
     - [x] Warn add
     - [ ] Warn remove
     - [x] Ban
-    - [ ] Unban
+    - [x] Unban
     - [x] Kick
     - [ ] Mute
-    - [ ] Unmute
+    - [x] Unmute
     - [ ] Mod_see
     
 # How to install
