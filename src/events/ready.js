@@ -14,7 +14,7 @@ class ReadyListener extends Listener {
         console.log('=> Logged in as '+this.client.id);
         console.log('=> A pretty cool bot, made by Loockeeer.');
         await require('../utils/updateGuild.js')(this.client);
-        setInterval(this.client.refreshModeration, 2000);
+        setInterval(require('../utils/refreshModeration'), 2000, this.client);
         update(this.client);
     }
 }

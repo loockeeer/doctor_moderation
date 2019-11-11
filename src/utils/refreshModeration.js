@@ -1,16 +1,7 @@
 const db = require('./graphQLConnect.js');
-module.exports = async function () {
+module.exports = async function (client) {
     const mod = (await db.query(`
 query {
-  allWarns{
-    nodes {
-      id
-      createdAt
-      reason
-      moderatorId
-      targetId
-    }
-  }
   allBans {
     nodes {
       createdAt
@@ -31,15 +22,6 @@ query {
       time
     }
   }
-  allKicks {
-    nodes {
-      createdAt
-      id
-      moderatorId
-      reason
-      targetId
-    }
-  }
 }
 
 `)).map(b => {
@@ -50,7 +32,18 @@ query {
     }).reduce((a, b) => a.concat(b));
     for(const action of mod) {
         if (action.time) {
-            console.log(action.createdAt < action.time)
+            if(Date.now() >= Number(action.createdAt)+Number(action.time)) {
+                if(action.type == "Ban") {
+                    client.emit('custom-unban', client.guilds.get(client.config.GUILD_ID).members.get(action.targetId), client.guilds.get(client.config.GUILD_ID).members.get(action.moderatorId), "Unban Automatique")
+                    db.query(`mutation {updateBanById(input: {banPatch: {finished: true}, id: ${action.id}){clientMutationId}}`)
+                    db.query(`mutation {updateBanById(input: {banPatch: {finished: true}, id: ${action.id}){clientMutationId}}`)
+
+                    // TODO : Add UnBan
+                } else if(action.type == "Mute") {
+                    // TODO : Add UnMute
+                }
+                console.log(`Deleted 1 ${action.type.toLowerCase()}. TargetID = ${action.targetId} | ModID = ${action.moderatorId}`)
+            }
         }
     }
 };

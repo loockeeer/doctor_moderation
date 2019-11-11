@@ -8,5 +8,4 @@ const client = new AkairoClient({
 });
 
 client.config = config
-client.refreshModeration = require('./utils/refreshModeration.js');
 client.login(require('./token.json'))
