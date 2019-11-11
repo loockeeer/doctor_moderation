@@ -1,5 +1,5 @@
 const fs = require('fs');
 const README = fs.readFileSync('./README.md');
-const toDoOccurs = README.match(/\[ \]/g);
-const codedOccurs = README.match(/\[x\]/g);
-console.log(codedOccurs.length/toDoOccurs.length)
+const toDoOccurs = /\[ \]/g.match(README);
+const codedOccurs = /\[x\]/g.match(README);
+console.log(codedOccurs.length/toDoOccurs.length);
